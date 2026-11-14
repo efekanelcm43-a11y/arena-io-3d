@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Arena IO 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hud">
+    <div class="brand">ARENA <span>IO 3D</span></div>
+    <div class="stats"><span id="score">Puan: 0</span><span id="status">Bağlanıyor...</span></div>
+    <div id="board"><b>EN İYİLER</b><ol id="leaders"></ol></div>
+    <div class="help">WASD / Ok tuşları: Hareket · Küreleri topla ve büyü!</div>
+  </div>
+  <div id="join" class="overlay">
+    <div class="panel">
+      <h1>ARENA IO 3D</h1>
+      <p>Arenaya katıl, enerji kürelerini topla ve skorunu yükselt.</p>
+      <input id="nickname" maxlength="16" placeholder="Oyuncu adın" value="Oyuncu">
+      <button id="play">OYUNA KATIL</button>
+      <small>İlk sürüm · Çok oyunculu test arenası</small>
+    </div>
+  </div>
+  <div id="error" class="error"></div>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
